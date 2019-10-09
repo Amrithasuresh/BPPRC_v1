@@ -1,0 +1,36 @@
+{% extends "database/base.html" %}
+{% block content %}
+{% load static %}
+
+
+<head>
+	<title>Home</title>
+	<meta Charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="{% static 'database/cc.css' %}">
+	</head>
+	<div id="wrapper">
+		<ul id="circles">
+      {% for prefix in category_prefixes %}
+
+			<li>
+				<a href="/categorize_database_{{ prefix|lower }}" >
+					<div class="circle">
+						<div>{{ prefix }}</div>
+					</div>
+				</a>
+			</li>
+        {% endfor %}
+
+		</ul>
+	</div>
+	<div class="clear-float"></div>
+	<div class="mt-2"></div>
+{% for description in descriptions %}
+
+	<div>
+		<span class="font-weight-bold">{{description.name}}:</span> {{description.description}}
+
+	</div>
+{% endfor %}
+
+{% endblock content %}

@@ -1,0 +1,19 @@
+{% extends "database/base.html" %}
+{% load static %}
+{% block content %}
+<!doctype html>
+<div id="wrapper">
+  <p> <b> Download the fasta sequences by categories </b> </p>
+      {% for prefix in category_prefixes %}
+        <li>
+            <a href="/download_category_{{ prefix|lower }}" >
+              {{ prefix }}
+        {% endfor %}
+        <br>
+
+        <li>
+          <a href="/download_category_all" > All
+        </li>
+</div>
+
+{% endblock content %}

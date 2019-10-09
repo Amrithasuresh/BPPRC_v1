@@ -1,0 +1,65 @@
+{% extends "database/base.html" %}
+{% load static %}
+
+
+<link rel="stylesheet" type="text/css" href="{% static 'database/cc.css' %}">
+
+{% block content %}
+
+
+	<html>
+		<body>
+			<div class="container">
+				<h2>Type in protein name(s) to search the database </h2>
+				<br>
+examples:
+
+					<br>
+						<h8> Cry1Aa1
+							<h8>
+								<br>
+									<h8> Cry32B
+										<h8>
+											<br>
+												<h8> Xpp22
+													<h8>
+														<br>
+															<h8> Cry41, Cry42, Cry43
+																<h8>
+																	<br>
+																		<br>
+																			<form method="post" action="/search_database/">
+  {% csrf_token %}
+
+																				<div class="form-group">
+																					<div class="col-lg-10">
+																						<input type="text" name="search_term" class="form-control" placeholder="Enter protein name" data-toggle="tooltip" data-placement="top" title="You can search by protein name." required="required">
+																							<br>
+																							</div>
+																							<label class="col-lg-2">
+																								<button type="submit" class="btn btn-danger">Search </button>
+																							</label>
+																						</div>
+																					</form>
+																					<div style="color: blue">
+          {% for id in match %}
+
+																						<table border="5px" width="300px">
+																							<th>Name</th>
+																							<tr class='parent'>
+																								<td>{{ id.name }}</td>
+																								<td>{{ id.oldname }}</td>
+																								<td>
+																									<a href=" https://www.ncbi.nlm.nih.gov/protein/{{ id.accession }}" target="_blank"> {{ id.accession }} </a>
+																								</td>
+																							</tr>
+																						</table>
+          {% endfor %}
+
+																					</div>
+
+{% endblock content %}
+
+
+																				</body>
+																			</html>
