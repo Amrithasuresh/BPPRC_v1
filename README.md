@@ -9,7 +9,8 @@ In addition to the database, the BPPRC will contain links to additional informat
 
 The development team is composed of:
 
-Suresh Pannerselvam<sup>1</sup> ,  Neil Crickmore <sup>2</sup> ,  Colin Berry <sup>3</sup>,  Thomas Connor<sup>3</sup>, Ruchir Mishra<sup>1</sup>  and  Bryony C. Bonning<sup>1</sup> &nbsp;
+Suresh Pannerselvam<sup>1</sup> ,  Neil Crickmore <sup>2</sup> ,  Colin Berry <sup>3</sup>,  Thomas Connor<sup>3</sup>, Ruchir Mishra<sup>1</sup>  and  Bryony C. Bonning<sup>1</sup>
+&nbsp;
 <sup>1</sup> Department of Entomology and Nematology, University of Florida, USA
 <sup>2</sup> School of Life Sciences, University of Sussex, UK
 <sup>3</sup> School of Biosciences, Cardiff University, UK
