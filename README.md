@@ -9,10 +9,10 @@ In addition to the database, the BPPRC will contain links to additional informat
 
 The development team is composed of:
 
-Suresh Pannerselvam 1 ,  Neil Crickmore  2 ,  Colin Berry 3,  Thomas Connor  3, Ruchir Mishra 1  and  Bryony C. Bonning 1
-1 Department of Entomology and Nematology, University of Florida, USA
-2 School of Life Sciences, University of Sussex, UK
-3 School of Biosciences, Cardiff University, UK
+Suresh Pannerselvam<sup>1</sup> ,  Neil Crickmore <sup>2</sup> ,  Colin Berry <sup>3</sup>,  Thomas Connor<sup>3</sup>, Ruchir Mishra<sup>1</sup>  and  Bryony C. Bonning<sup>1</sup>
+<sup>1</sup> Department of Entomology and Nematology, University of Florida, USA
+<sup>2</sup> School of Life Sciences, University of Sussex, UK
+<sup>3</sup> School of Biosciences, Cardiff University, UK
 
 
 This is the source code of BBPRC 2019 website developed in Python/Django. To run the website locally, you need to install Django and a list of other Python packages which are listed in the requirements.txt file.
@@ -23,16 +23,12 @@ Get the development version from `Github`
 
 If you have `git` and `pip` installed, use this:
 
-.. code-block:: bash
-
-    git clone
-    cd bbprc
+    git clone https://github.com/Amrithasuresh/BPPRC.git
+    cd bpprc
     pip install -r requirements.txt
     python manage.py migrate
     python manage.py runserver
 
 Then copy the following URL in your browser.
 
-.. code-block:: bash
-
-    http://127.0.0.1:8000/
+http://127.0.0.1:8000/
