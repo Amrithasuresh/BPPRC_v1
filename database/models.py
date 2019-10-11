@@ -12,21 +12,12 @@ class PesticidalProteinDatabase(models.Model):
     year = models.CharField(max_length=5, blank=True, null=False)
     fastasequence = models.TextField(blank=True, null=False)
 
-    class Meta:
-        ordering = ('name',)
-
     def publish(self):
         self.published_date = timezone.now()
         self.save()
 
     def __str__(self):
         return self.name
-
-
-class PesticidalProteinDatabaseAdmin(admin.ModelAdmin):
-    """
-    """
-    search_fields = ('name', 'oldname', 'accession', 'year')
 
 
 class Description(models.Model):
