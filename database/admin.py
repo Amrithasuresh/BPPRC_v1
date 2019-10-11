@@ -8,7 +8,7 @@ admin.site.register(PesticidalProteinDatabase,
 
 
 class PesticidalProteinDatabaseAdmin(admin.ModelAdmin):
-    search_fields = ('name')
+    search_fields = ('name', 'oldname', 'accession','year')
 
     def get_ordering(self, request):
         return('name')
