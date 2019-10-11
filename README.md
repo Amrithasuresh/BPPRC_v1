@@ -24,6 +24,10 @@ Get the development version from `Github`
 
 If you have `git` and `pip` installed, use this:
 
+    pip install virtualenv
+    virtualenv env
+    source env/bin/activate
+    
     git clone https://github.com/Amrithasuresh/BPPRC.git
     cd bpprc
     pip install -r requirements.txt
