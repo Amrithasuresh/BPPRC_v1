@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block extrahead %}
+<link rel="stylesheet" type="text/css" href="{% static 'database/css/bootstrap.min.css' %}">
+{% endblock extrahead %}
+
+{% block content %}
+
+
+  <body>
+
+  <br></br>
+  <br></br>
+  <br></br>
+
+  <td class="pgm_list" width="100%"><h2>Compare two proteins - from database or user-supplied</h2></td>
+  <br>
+  <form action="/bestmatchfinder_database_sequence_run/" method="post">
+  <div class="g-recaptcha" data-sitekey="6Leqs7UUAAAAAKB3sQiwP-s09lzzu6OGXNyAB4nJ"></div>
+
+    {% csrf_token %}
+    {{ form |crispy }}
+    <button type="submit" class="btn btn-secondary"  >Submit</button>
+  </form>
+
+  </body>
+  </html>
+
+
+{% endblock content %}
+
+{% block extrajs %}
+
+<script type="text/javascript" src="{% static 'database/js/chosen.jquery.min.js' %}"> </script>
+
+<script>
+  $(document).ready(function() {
+    $('#id_protein_id1').chosen();
+    $('#id_protein_id2').chosen();
+  });
+
+</script>
+{% endblock %}

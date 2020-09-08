@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+{% load static %}
+
+
+
+{% block content %}
+<h1> Download the sequences by categories </h1>
+</br>
+{% crispy form %}
+
+
+{% endblock content %}
+
+{% block extrahead %}
+<style>
+
+.form-check {
+  font-size: 16px;
+  line-height: 2;
+}
+</style>
+
+{% endblock extrahead %}
+
+
+{% block extrajs %}
+<script>
+$('#id_category_type_1').click(function() {
+   if(this.checked) {
+       $(':checkbox').each(function() {
+           this.checked = true;
+       });
+   } else {
+      $(':checkbox').each(function() {
+           this.checked = false;
+       });
+   }
+});
+</script>
+
+{% endblock extrajs %}
