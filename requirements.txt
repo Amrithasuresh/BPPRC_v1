@@ -4,7 +4,7 @@ attrs==19.3.0
 Babel==2.7.0
 backports.csv==1.0.7
 biopython==1.74
-bleach==3.1.0
+bleach==3.1.4
 bokeh==1.4.0
 captcha==0.3
 certifi==2019.11.28
