@@ -27,11 +27,11 @@ If you have `git` and `pip` installed, use this:
    virtualenv env
    source env/bin/activate
 
-   git clone https://github.com/Amrithasuresh/BPPRC.git
-   cd bpprc
-   pip install -r requirements.txt
-   python manage.py migrate
-   python manage.py runserver
+   git clone https://github.com/Amrithasuresh/BPPRC.git <br />
+   cd bpprc <br />
+   pip install -r requirements.txt <br />
+   python manage.py migrate <br />
+   python manage.py runserver <br />
 
 Then copy the following URL in your browser.
 
