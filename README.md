@@ -1,4 +1,4 @@
-# BPPRC 2019
+# BPPRC 2020
 
 The pesticidal protein database is part of the Bacterial Pesticidal Protein Resource Center (BPPRC), which is under development. This database is intended to replace and extend the current [Bacillus thuringiensis nomenclature site](http://www.btnomenclature.info).
 
