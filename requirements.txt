@@ -10,7 +10,7 @@ captcha==0.3
 certifi==2019.11.28
 cffi==1.12.3
 chardet==3.0.4
-cryptography==2.7
+cryptography==3.2
 decorator==4.4.1
 defusedxml==0.6.0
 diff-match-patch==20181111
