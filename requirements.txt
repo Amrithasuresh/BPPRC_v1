@@ -51,7 +51,7 @@ psycopg2==2.8.3
 pudb==2019.2
 pycodestyle==2.5.0
 pycparser==2.19
-Pygments==2.5.2
+Pygments==2.7.4
 pyparsing==2.4.5
 PyQt5==5.13.1
 PyQt5-sip==12.7.0
