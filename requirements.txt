@@ -46,7 +46,7 @@ openpyxl==3.0.0
 packaging==19.2
 pandas==0.25.3
 pandocfilters==1.4.2
-Pillow==6.2.0
+Pillow==9.0.1
 psycopg2==2.8.3
 pudb==2019.2
 pycodestyle==2.5.0
